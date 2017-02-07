@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    mysql:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1/blog
+      username: root
+      password: root
+    mongo:
+      host: localhost
+      database: blog
+      username: blog
+      password: 123456
+      port: 27017
+  thymeleaf:
+    cache: false
+    check-template-location: true
+    mode: HTML5
+  data:
+    rest:
+      base-path: /api
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+mybatis:
+  config-location: classpath:mybatis-config.xml

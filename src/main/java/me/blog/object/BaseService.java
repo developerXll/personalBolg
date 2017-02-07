@@ -1,0 +1,12 @@
+package me.blog.object;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+public class BaseService {
+	protected Log logger = LogFactory.getLog(this.getClass());
+	
+	protected void log(String msg) {
+		logger.warn(msg);
+	}
+}

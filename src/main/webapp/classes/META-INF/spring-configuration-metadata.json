@@ -1,0 +1,10 @@
+{
+  "groups": [{
+    "name": "spring.datasource.mysql",
+    "type": "javax.sql.DataSource",
+    "sourceType": "me.blog.DataSourceConfig",
+    "sourceMethod": "public javax.sql.DataSource mysqlDataSource() "
+  }],
+  "properties": [],
+  "hints": []
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+	      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+	    </Console>
+	    <!-- File
+	     <File name="File1" fileName="output.log" bufferedIO="false" advertiseURI="file://path/to/output.log" advertise="true">
+	     </File>
+	     -->
+	</Appenders>
+	<Loggers>
+		<!-- 打印sql -->
+		<logger name="me.blog.persistence.mapper" level="debug" />
+	    <Root level="info">
+	      <AppenderRef ref="Console" />
+	    </Root>
+	  </Loggers>
+</Configuration>

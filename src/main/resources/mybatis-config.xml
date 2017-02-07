@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<!-- 开启自动驼峰命名规则，即A_COLUMN_NAME到java属性名aColumnName -->
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<setting name="defaultStatementTimeout" value="10" />
+	</settings>
+    <!-- 
+    	配置文件方式
+    <typeAliases>
+        <package name="me.blog.persistence.domain"/>
+    </typeAliases>
+    <mappers>
+        <mapper resource="mybatis/SysUserMapper.xml"/>
+    </mappers> 
+    -->
+    <!-- <plugins>
+    	<plugin interceptor="me.blog.persistence.plugins.GenerateIdPlugin" />
+    </plugins> -->
+</configuration>
